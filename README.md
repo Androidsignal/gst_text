@@ -131,7 +131,7 @@ We welcome and appreciate any suggestions you may have for improvement.
 For bugs, questions, and discussions please use the [GitHub Issues](https://github.com/Androidsignal/gst_text/issues).
 
 # Acknowledgments 
-It extends Flutter’s foundation to provide a ready-to-use, customizable currency formatter widget.While Flutter and intl provide the base, price_text simplifies the process by combining widgets and formatting logic into a single package you can drop into any app.
+It extends Flutter’s foundation to provide a ready-to-use, customizable currency formatter widget.While Flutter and intl provide the base, gst_text simplifies the process by combining widgets and formatting logic into a single package you can drop into any app.
  
 # Contribution 
 The DashStack team enthusiastically welcomes contributions and project participation!
