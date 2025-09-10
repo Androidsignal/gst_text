@@ -1,4 +1,3 @@
-
 enum GstType { igst, sgst, cgst, utgst }
 
 /// Default GST percentages for each type
@@ -46,10 +45,10 @@ class GstModel {
   }
 
   Map<String, dynamic> toJson() => {
-    "amount": amount,
-    "gstAmount": gstAmount,
-    "total": total,
-    "gstPercentage": gstPercentage,
-    "gstType": gstType.toString(),
-  };
+        "amount": amount,
+        "gstAmount": gstAmount,
+        "total": total,
+        "gstPercentage": gstPercentage,
+        "gstType": gstType.toString(),
+      };
 }

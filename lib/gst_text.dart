@@ -19,7 +19,7 @@ class GstText extends StatelessWidget {
   final bool showGstPercentage;
   final bool hideCurrencySymbol;
 
-  /// 🔹 Callback for returning calculated values
+  ///  Callback for returning calculated values
   final void Function(GstModel)? gstValueCallBack;
 
   const GstText({
@@ -41,7 +41,8 @@ class GstText extends StatelessWidget {
     if (avoidFormatting) {
       return "${hideCurrencySymbol ? "" : currencySymbol}${value.toStringAsFixed(2)}";
     }
-    final formatter = NumberFormat.currency(symbol: hideCurrencySymbol ? "" : currencySymbol);
+    final formatter =
+        NumberFormat.currency(symbol: hideCurrencySymbol ? "" : currencySymbol);
     return formatter.format(value);
   }
 
@@ -68,9 +69,11 @@ class GstText extends StatelessWidget {
       String gstLabel = "GST";
 
       if (showGstType) {
-        final typeLabel = gstTextCalculate.gstType.toString().split('.').last.toUpperCase();
+        final typeLabel =
+            gstTextCalculate.gstType.toString().split('.').last.toUpperCase();
         if (showGstPercentage) {
-          gstLabel += " [$typeLabel (${gstTextCalculate.gstPercentage.toStringAsFixed(0)}%)]";
+          gstLabel +=
+              " [$typeLabel (${gstTextCalculate.gstPercentage.toStringAsFixed(0)}%)]";
         } else {
           gstLabel += " [$typeLabel]";
         }

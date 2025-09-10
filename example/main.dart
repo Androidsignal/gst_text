@@ -21,7 +21,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 class ExampleScreen extends StatefulWidget {
   const ExampleScreen({super.key});
 
@@ -30,14 +29,15 @@ class ExampleScreen extends StatefulWidget {
 }
 
 class _ExampleScreenState extends State<ExampleScreen> {
-
   @override
   void initState() {
     super.initState();
+
+    /// Example of using GstModel.calculate method directly
     final gstValues = GstModel.calculate(
-      amount: 2000,
-      gstType: GstType.cgst,
-      gstPercentage: 20,
+      amount: 2000, // amount
+      gstType: GstType.cgst, // gst type
+      gstPercentage: 20, // optional additional percentage
     );
     print('gstValues from method: ${gstValues.toJson()}');
   }
@@ -49,16 +49,17 @@ class _ExampleScreenState extends State<ExampleScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            /// with method using static method
+            /// Example of using GstText widget
             GstText(
-              amount: 1000,
-              gstType: GstType.cgst,
-              gstPercentage: 21,
-              avoidFormatting: false,
-              showOnlyTotal: false,
-              showGstPercentage: true,
-              hideCurrencySymbol: true,
-              showGstType: true,
+              amount: 1000, // amount
+              gstType: GstType.cgst, // gst type
+              gstPercentage: 21, // optional additional percentage
+              avoidFormatting: false, // set true to avoid formatting
+              showOnlyTotal: false, // set true to show only total amount
+              showGstPercentage: true, // set true to show gst percentage
+              hideCurrencySymbol: false, // set true to hide currency symbol
+              showGstType: true, // set true to show gst type
+              /// Callback to get calculated values
               gstValueCallBack: (gstAmount) {
                 print('GST Calculation: ${gstAmount.toJson()}');
                 print('Amount: ${gstAmount.amount}');
@@ -67,7 +68,7 @@ class _ExampleScreenState extends State<ExampleScreen> {
                 print('Percentage: ${gstAmount.gstPercentage}');
                 print('GST Type: ${gstAmount.gstType}');
               },
-           ),
+            ),
           ],
         ),
       ),
