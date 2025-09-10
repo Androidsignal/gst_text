@@ -57,7 +57,6 @@ Now in your `Dart` code, you can use :
 
 ```
 import 'package:gst_text/gst_text.dart';
-
 ```
 
 ### 4. Use it
