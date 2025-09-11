@@ -25,7 +25,6 @@ Flutter GST Text Widget – Easily calculate and display GST, total amount, and 
   
 ---
 
-## 📸 Screenshots
 | withoutAnyCustomization DefultScreen| with customization Screen |
 |-------------------|-----------------------------|
 | ![no customization](https://github.com/user-attachments/assets/a7a4df6a-ba72-4468-b21a-6df31140324a) |  ![all customization](https://github.com/user-attachments/assets/d6c861cf-536d-4c99-ae91-90a699fbaa6b) |
@@ -85,8 +84,8 @@ You just need to add the widget with an amount and currency type, and it will ha
 | `showGstMode`        | `bool`                | `false`      | If `true`, displays GST mode label (`Inclusive GST` / `Exclusive GST` / `GST`).                                                               |
 | `gstValueCallBack`   | `Function(GstModel)?` | `null`       | Callback that returns the full `GstModel` object (amount, gstAmount, total, gstPercentage, gstType). Useful for saving or further processing. |
 
-### without any customization
-
+### without any customization :
+---
 Only Amount and Total will be shown by default.
 
 GST amount, type, percentage, and mode are all hidden unless explicitly enabled.
@@ -105,12 +104,13 @@ inclusive mode → Amount already includes GST.
  )
 ```
 
-## 📸 Screenshots
 | exclusive GstMode | inclusive GstMode  |
 |-------------------|-----------------------------|
 | ![no customization](https://github.com/user-attachments/assets/8f38a10c-1bb3-4045-ab48-22157e38be69) | ![no customization](https://github.com/user-attachments/assets/021718eb-d000-4881-bff0-a8df226261fe)|
 
 ### with all customization
+---
+
 ```
 GstText(
   amount: 2000, // amount
@@ -134,7 +134,6 @@ GstText(
 
 ```
 
-## 📸 Screenshots
 | inclusive GstMode| exclusive GstMode |
 |-------------------|-----------------------------|
 |![all customization](https://github.com/user-attachments/assets/50cabff2-61b5-411a-93fe-d28028691f98) | ![all customization](https://github.com/user-attachments/assets/d6c861cf-536d-4c99-ae91-90a699fbaa6b) |
