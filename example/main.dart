@@ -36,8 +36,9 @@ class _ExampleScreenState extends State<ExampleScreen> {
     /// Example of using GstModel.calculate method directly
     final gstValues = GstModel.calculate(
       amount: 2000, // amount
-      gstType: GstType.cgst, // gst type
+      gstType: GstType.igst, // gst type
       gstPercentage: 20, // optional additional percentage
+      gstMode: GstMode.inclusive, // optional gst mode
     );
     print('gstValues from method: ${gstValues.toJson()}');
   }
@@ -51,17 +52,23 @@ class _ExampleScreenState extends State<ExampleScreen> {
           children: [
             /// Example of using GstText widget
             GstText(
-              amount: 1000, // amount
-              gstType: GstType.cgst, // gst type
-              gstPercentage: 21, // optional additional percentage
-              avoidFormatting: false, // set true to avoid formatting
-              showOnlyTotal: false, // set true to show only total amount
-              showGstPercentage: true, // set true to show gst percentage
-              hideCurrencySymbol: false, // set true to hide currency symbol
-              showGstType: true, // set true to show gst type
+              amount: 2000, // amount
+              gstMode: GstMode.inclusive, // gst mode (inclusive/exclusive)
+              gstType: GstType.cgst, // gst type (igst/cgst/sgst/utgst)
+              gstPercentage: 20, // optional additional percentage
+              showGstType: true, // show gst type
+              showGstPercentage: true, // show gst percentage
+              showGstMode: true, // show gst mode
+              showGstAmount: true, // show gst amount
+              showOnlyTotal:
+                  false, // show only total amount if true to show only total
+              avoidFormatting:
+                  false, // avoid formatting if true to show raw text
+              hideCurrencySymbol:
+                  false, // hide currency symbol if true to hide symbol
               /// Callback to get calculated values
               gstValueCallBack: (gstAmount) {
-                print('GST Calculation: ${gstAmount.toJson()}');
+                print('gstValues from widget: ${gstAmount.toJson()}');
                 print('Amount: ${gstAmount.amount}');
                 print('GST Amount: ${gstAmount.gstAmount}');
                 print('Total: ${gstAmount.total}');
