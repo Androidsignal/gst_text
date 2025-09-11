@@ -5,6 +5,14 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.0.2] - (2025-sep-11)
+Introduced **`gstMode`** property:
+- Supports `inclusive`, `exclusive`, or default `GST`.
+- `inclusive`: Amount includes GST.
+- `exclusive`: GST added on top of the amount.
+- Fixed minor when hiding/showing properties.
+
+
 ## [0.0.1] - (2025-Sep-10)
 
 - Initial release of `gst_text` package.
