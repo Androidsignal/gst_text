@@ -5,7 +5,12 @@ This project follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [0.0.3] - (2025-Sep-15)
+
+- Update documentation in README.md with better usage examples.
+
 ## [0.0.2] - (2025-sep-11)
+
 Introduced **`gstMode`** property:
 - Supports `inclusive`, `exclusive`, or default `GST`.
 - `inclusive`: Amount includes GST.
