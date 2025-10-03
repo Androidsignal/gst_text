@@ -4,6 +4,13 @@ All notable changes to the **gst_text** package will be documented in this file.
 This project follows [Semantic Versioning](https://semver.org/).
 
 ---
+## [0.0.4] - (2025-Oct-03)
+
+- Added new GST slabs and percentages:
+  * Merit rate: 5% (for essential items and priority sectors)
+  * Standard rate: 18% (applicable to most goods and services)
+  * Demerit rate: 40% (for sin goods and luxury items)
+- GstText widget now fully supports new GST slabs, including showing GST type, percentage, and amount.
 
 ## [0.0.3] - (2025-Sep-15)
 

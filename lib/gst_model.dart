@@ -1,5 +1,5 @@
 /// GST Types and Modes
-enum GstType { igst, sgst, cgst, utgst }
+enum GstType { standard, merit, demerit }
 
 enum GstMode {
   inclusive,
@@ -12,10 +12,9 @@ enum GstMode {
 
 /// Default GST percentages for each type
 const Map<GstType, double> defaultGstPercentage = {
-  GstType.igst: 18,
-  GstType.sgst: 9,
-  GstType.cgst: 9,
-  GstType.utgst: 9,
+  GstType.merit: 5,      // Merit rate
+  GstType.standard: 18,  // Standard rate
+  GstType.demerit: 40,   // Demerit rate
 };
 
 class GstModel {
