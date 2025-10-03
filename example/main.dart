@@ -36,7 +36,8 @@ class _ExampleScreenState extends State<ExampleScreen> {
     /// Example of using GstModel.calculate method directly
     final gstValues = GstModel.calculate(
       amount: 2000, // amount
-      gstType: GstType.standard, // gst type (merit(5%)/standard(18%)/demerit(40%))
+      gstType:
+          GstType.standard, // gst type (merit(5%)/standard(18%)/demerit(40%))
       gstPercentage: 20, // optional additional percentage
       gstMode: GstMode.inclusive, // optional gst mode
     );
@@ -54,7 +55,8 @@ class _ExampleScreenState extends State<ExampleScreen> {
             GstText(
               amount: 2000, // amount
               gstMode: GstMode.inclusive, // gst mode (inclusive/exclusive)
-              gstType: GstType.standard, // gst type (merit(5%)/standard(18%)/demerit(40%))
+              gstType: GstType
+                  .standard, // gst type (merit(5%)/standard(18%)/demerit(40%))
               gstPercentage: 20, // optional additional percentage
               showGstType: true, // show gst type
               showGstPercentage: true, // show gst percentage

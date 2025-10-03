@@ -12,9 +12,9 @@ enum GstMode {
 
 /// Default GST percentages for each type
 const Map<GstType, double> defaultGstPercentage = {
-  GstType.merit: 5,      // Merit rate
-  GstType.standard: 18,  // Standard rate
-  GstType.demerit: 40,   // Demerit rate
+  GstType.merit: 5, // Merit rate
+  GstType.standard: 18, // Standard rate
+  GstType.demerit: 40, // Demerit rate
 };
 
 class GstModel {
