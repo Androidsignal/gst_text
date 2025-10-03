@@ -5,7 +5,7 @@
 
 A customizable Flutter widget to calculate and display GST (Goods & Services Tax) with flexible UI options.
 
-Flutter GST Text Widget – Easily calculate and display GST, total amount, and tax breakdown in your Flutter apps. Supports CGST, SGST, IGST, custom percentages, and formatted currency display.
+Flutter GST Text Widget – Easily calculate and display GST, total amount, and tax breakdown in your Flutter apps. Supports merit(5%),standard(18%),demerit(40%), custom percentages, and formatted currency display.
 
 ---
 
