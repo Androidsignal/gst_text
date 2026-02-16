@@ -1,5 +1,5 @@
 
-[![DashStackPoster](https://github.com/user-attachments/assets/7c89bfb5-a1d9-496b-ac68-b9737f34fc5b)](https://dashstack.notion.site/Ravi-Vithani-e65c362e335d45ef993225687e4aacb8?pvs=143)
+[![DashStackPoster](https://github.com/user-attachments/assets/7c89bfb5-a1d9-496b-ac68-b9737f34fc5b)](https://www.dashstack.tech/)
 
 # Gst Text
 
