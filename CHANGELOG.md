@@ -4,6 +4,9 @@ All notable changes to the **gst_text** package will be documented in this file.
 This project follows [Semantic Versioning](https://semver.org/).
 
 ---
+## [0.0.5] - (2026 -Feb-16)
+- Updated documentation in `README.md`.
+
 ## [0.0.4] - (2025-Oct-03)
 
 - Added new GST slabs and percentages:

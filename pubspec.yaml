@@ -3,7 +3,7 @@ description: "A customizable Flutter widget to calculate and display GST with fl
 homepage: https://github.com/Androidsignal/gst_text/blob/main/example/main.dart
 repository: https://github.com/Androidsignal/gst_text
 issue_tracker: https://github.com/Androidsignal/gst_text/issues
-version: 0.0.4
+version: 0.0.5
 
 # The following defines the version and build number for your application.
 # A version number is three numbers separated by dots, like 1.2.43
